@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Padding", sans-serif;
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 7px;
+}
+
+.logo img{
+    width: 35%;
+    margin-left: 100px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu li a{
+    margin-right: 65px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #103138;
+    text-decoration: none;
+}
+
+.navbar .menu button{
+    background-color: white;
+    margin-right: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+.navbar .menu button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* NAVIGATION */
+
+/* PROMO */
+
+.slider-wrapper{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 \ 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    width: 100%;;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 100%;
+}
+
+/* PROMO */
+
+
+/* SHOWING MOVIES */
+
+.movies{
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.section-title{
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.movies-container{
+  display: flex;
+  padding: 0 10vw;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.movies-container::-webkit-scrollbar{
+  display: none;
+}
+
+.movies-card{
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.movies-image{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.movies-thumb{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.num{
+  position: absolute;
+  background: grey;
+  padding: 5px;
+  border-radius: 5px;
+  color: #103138;
+  right: 10px;
+  top: 10px;
+}
+
+.movies-title{
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+    width: 20px;
+}
+
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+
+/* SHOWING MOVIES */
+
+
+/* MOVIE NEWS */
+
+.news{
+    background-color: #103138;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.movie-news{
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.box-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 150px;
+    margin-right: 500px;
+    align-items: center;
+    gap: 0px;
+}
+
+.box-news img{
+    width: 250px;
+    padding: 0;
+    background-color: #318391;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin-left: 170px;
+}
+
+.box-news p{
+    font: 500;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.box-news p span{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* MOVIE NEWS */
+
+footer{
+    background-color: #103138;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+footer .sosial{
+    display: flex;
+    gap: 20px;
+}
+
+footer .sosial a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}

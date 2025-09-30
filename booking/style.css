@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Padding", sans-serif;
+}
+
+/* NAVIGATION */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 7px;
+}
+
+.logo img{
+    width: 35%;
+    margin-left: 100px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu li a{
+    margin-right: 65px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #103138;
+    text-decoration: none;
+}
+
+.navbar .menu button{
+    background-color: white;
+    margin-right: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+.navbar .menu button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* NAVIGATION */
+
+/* BOOKING */
+
+.container-booking {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-booking h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(52, 52, 52);
+}
+
+
+.booking-card {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    gap: 20px; 
+}
+
+.booking-card img {
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 4px;
+    width: 20%;
+}
+
+
+.title-movie{
+    flex-grow: 1; 
+}
+
+.title-movie h3{
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 1.2em;
+}
+
+.title-movie span{
+    color: rgb(131, 131, 131);
+    font-weight: bold;
+}
+
+.title-movie p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #103138;
+    font-weight: bold;
+}
+
+.jam-tayang {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.jam-tayang a {
+    border: 1px solid #103138; 
+    color: #103138; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    border-radius: 4px; 
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Efek hover opsional */
+.jam-tayang a:hover {
+    background-color: #103138;
+    color: white;
+}
+/* BOOKING */
+
+/* FOOTER */
+footer{
+    background-color: #103138;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+footer .sosial{
+    display: flex;
+    gap: 20px;
+}
+
+footer .sosial a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+/* FOOTER */
